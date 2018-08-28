@@ -9,6 +9,10 @@
 
 ### 为什么用图数据库
 
+高度连接数据
 
 
 ### 怎么用图数据库
+
+* Apache TinkerPop
+* Germlin Traversal Language
