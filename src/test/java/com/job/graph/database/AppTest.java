@@ -12,11 +12,15 @@ public class AppTest {
 
     @Test
     public void test() {
+        //todo to test the query language
         Graph graph = new TinkerGraph();
         Vertex a = graph.addVertex("a");
         Vertex b = graph.addVertex("b");
 
         Edge like = a.addEdge("like", b);
         Assert.assertEquals("like", like.getLabel());
+
+
+
     }
 }
