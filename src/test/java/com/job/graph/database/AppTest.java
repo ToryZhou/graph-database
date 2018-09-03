@@ -14,9 +14,13 @@ public class AppTest {
     public void test() {
         Graph graph = new TinkerGraph();
         Vertex a = graph.addVertex("a");
-        Vertex b = graph.addVertex("b");
 
+        Vertex b = graph.addVertex("b");
         Edge like = a.addEdge("like", b);
         Assert.assertEquals("like", like.getLabel());
+
+        Vertex a1 = graph.getVertex("a");
+        a1.setProperty("name", "tong");
+        Assert.assertEquals("tong", a1.getProperty("name"));
     }
 }
