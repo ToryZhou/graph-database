@@ -17,4 +17,5 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 //    compile group: 'com.tinkerpop.gremlin', name: 'gremlin-java', version: '2.6.0'
     compile group: 'org.apache.tinkerpop', name: 'gremlin-core', version: '3.3.3'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.4.RELEASE'
 }
