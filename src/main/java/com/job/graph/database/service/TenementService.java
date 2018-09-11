@@ -15,7 +15,7 @@ public class TenementService {
     private RestTemplate restTemplate;
 
     public String get() {
-        String uri = "https://api.weixin.qq.com/cgi-bin/menu/get?access_token=";
+        String uri = "https://www.baidu.com/";
         HttpHeaders httpHeaders = new HttpHeaders();
         ResponseEntity<String> exchange = restTemplate.exchange(uri, HttpMethod.GET, new HttpEntity<>(httpHeaders), String.class);
         return exchange.getBody();
