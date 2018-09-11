@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
 @SpringBootApplication(scanBasePackages = {"com.job.graph.database"})
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class App {
