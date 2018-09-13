@@ -24,4 +24,8 @@ public class TenementService {
         return body;
     }
 
+    public String get(String key){
+        return "";
+    }
+
 }
