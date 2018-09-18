@@ -5,6 +5,7 @@ import com.job.graph.database.service.TenementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,5 +24,12 @@ public class TenementController {
     public ResponseEntity<?> scan() {
         return ResponseEntity.ok().body(tenementService.get());
     }
+
+    @PostMapping
+    public ResponseEntity<?> save() {
+        tenementService.save();
+        return ResponseEntity.ok().build();
+    }
+
 
 }

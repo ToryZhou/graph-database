@@ -28,6 +28,8 @@ public class TenementService {
         graph.addVertex(tenementDto);
         graph.addVertex("a");
         Vertex a = graph.getVertex("a");
+        a.setProperty("name","zhou");
+
     }
 
     public String get() {
