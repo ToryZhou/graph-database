@@ -37,6 +37,7 @@ public class TenementService {
         HttpHeaders httpHeaders = new HttpHeaders();
         ResponseEntity<String> exchange = restTemplate.exchange(uri, HttpMethod.GET, new HttpEntity<>(httpHeaders), String.class);
         String body = exchange.getBody();
+        int i = body.indexOf("元/月");
         System.out.println(body);
 
         return body;
